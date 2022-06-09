@@ -2,9 +2,11 @@
 
 FROM cimg/go:1.18
 
-WORKDIR /app
+WORKDIR /home/circleci/project
 COPY *.go ./
 COPY go.mod ./
-RUN go build -o /go-service
+RUN go build main.go
+
 EXPOSE 8090
-CMD [ "/go-service" ]
+
+CMD [ "/home/circleci/project/main" ]
