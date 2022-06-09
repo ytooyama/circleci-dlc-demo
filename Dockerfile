@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM docker.io/golang:1.18-bullseye
+FROM cimg/go:1.18
 
 WORKDIR /app
 COPY *.go ./
