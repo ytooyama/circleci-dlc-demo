@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM cimg/go:1.18
+FROM cimg/go:1.18.3
 
 WORKDIR /home/circleci/project
 COPY *.go ./
